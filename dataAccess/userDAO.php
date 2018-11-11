@@ -1,6 +1,4 @@
 <?php
-
-
 class userDAO {
 
     private $Db;
@@ -39,3 +37,4 @@ class userDAO {
         }
     }   
 }
+?>

@@ -29,10 +29,10 @@ $.ajax({
 
 		$(data).find('series').each(function(){
 			new_html+= `
-			<h3>	${$(this).find('ranking').text()}.${$(this).find('name').text()}</h3>
-			<img src="${$(this).find('img').text()}"/>
-			<p class="series_info">${$(this).find('sala').text()} Horario: ${$(this).find('horario').text()} | IMDB <span class="imdb_score">${$(this).find('imdb').text()}</span> </p>
-			<p class="description">${$(this).find('description').text()}</p>
+			<div class="cart"><h3>${$(this).find('name').text()}</h3>
+			<img id="img" src="${$(this).find('img').text()}"/>
+			<span class="info">${$(this).find('sala').text()} Horario: ${$(this).find('horario').text()}</span>
+			<p class="description">${$(this).find('description').text()}</p> </div> <div id="separacion">.</div>
 			`;
 		} );
 		$('#cartelera').append(new_html);

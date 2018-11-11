@@ -1,4 +1,4 @@
-	<!DOCTYPE html> 
+<!DOCTYPE html> 
 	<html>
 	<head>
 		<meta charset="utf-8">
@@ -7,12 +7,13 @@
 		</title>
 		<link rel="stylesheet" type="text/css" href="styles/style.css">
 	</head>	
-	<body>
-		<header>
+        
+	<body class="body">
+        <div id="top">
 			<h1> 
 				Señor Cine
 			</h1>
-		</header>
+		</div>
 		<nav>
 			<ul id="menu">
 				<li id="Inicio"> 
@@ -25,16 +26,16 @@
 					Foro 
 				</li>
 				<li id="Login"> 
-					Log In 
+					Iniciar Sesion 
 				</li>
 				<li id="Registro"> 
-					Registro
+					Registrarte
 				</li>
 			</ul>
 		</nav>
 		<main>
 			<div id= "how" class="element_hidden">
-				<h3>¿Cómo quiere su burrito?</h3>
+				<h3>¿Qué paquete quiere?</h3>
 				
 			</div>
 			<div id= "resum" class="element_hidden">
@@ -52,79 +53,23 @@
 			<section id="Menu_section"  class="element_hidden">
 				<form id=form1 class="element_hidden">
 					<h4>
-						Tipo de tortilla 
+						Paquetes
 					</h4>
-					<div id ="radio_tortilla"> </div>
+					<div id ="paquete"> </div>
 					
-					<span id="tortilla_incorrecto" class="element_hidden validation_error">Debes elegir un tipo de tortilla</span>
+					<span id="paquete_incorrecto" class="element_hidden validation_error">Debes elegir un paquete</span>
 					<br/> 
-					<h4>Ingrediente principal</h4>
-					<div id="select_carne"></div>
 					
-					<br/>
-					<span id="carne_incorrecto" class="element_hidden validation_error">Debes elegir un tipo de carne</span>
-					<br/>
-
-					<h4>Ingredientes secundarios</h4>
-					<div id="check_secun"></div>
+					<h4>Dulces</h4>
+					<div id="dulce"></div>
 					
-					<br/>
-					<h4>La salsa</h4>
-					<div id="radio_salsa"></div>
-					
-					<h4>¿Quieres unos nachos? </h4>
-					<input type="radio" name="nachos" id ="si" value="Si"/> Sí
-					<input type="radio" name="nachos" value="No"/> No
-					<br/>
-					
-					<span id="nachos_incorrecto" class="element_hidden validation_error">Debes decidir si quieres nachos</span>
-					<br/>
-					<h4>
-						¿Cuantos burritos quieres?
-					</h4>
-					<input id="numero" type="text" /> 
-					<span id="numero_incorrecto" class="element_hidden validation_error">Debes indicar una cantidad de burritos válida</span>
-					<br/>
-					<br/>
 				</form>
+				<br/><br/>
+
 				<input id="button_cancel" class="element_hidden" type="submit" value="Reset"/>
 				<input id ="button_submit" name="pedidosSubmit" class="element_hidden" type="submit" value="Submit"/>
 			</section>
 
-			<form id="res" class="element_hidden">
-				
-				<h6>Resumen de tu pedido:</h6>
-				<h4>
-					Tipo de tortilla 
-				</h4>
-				<br/>
-
-				<span id="tortilla_elegida" class="resumen"></span>
-				<br/> 
-				<h4>Ingrediente principal</h4>
-				<br/>
-				<span id="carne_elegida" class="resumen" ></span>
-				<br/>
-
-				<h4>Ingredientes secundarios</h4>
-				<br/>
-				<span id="secundarios_elegida" class="resumen" ></span>
-				<br/>
-				<h4>La salsa</h4>
-				<br/> 
-				<span id="salsa_elegida" class="resumen"></span>
-				<br/>
-				<h4>Nachos </h4>
-				<br/>
-				<span id="nachos_elegida" class="resumen" ></span>
-				<br/>
-				<h4>
-					Burritos
-				</h4>
-				<span id="numero_elegida" class="resumen"></span>
-				<br/>
-				
-			</form>
 			<section id ="Opiniones_section" class="element_hidden">
 				<nav>
 					<ul id="submenu">
@@ -145,6 +90,7 @@
 						</li>
 					</ul>
 				</nav>
+                <div id="comments">
 				<form id="coments">
 					<p>Usuario</p>
 					<input id ="usuario" class="form_element" type="text"/>
@@ -191,6 +137,7 @@
 		<span id="coment_ejemplo" class="comentario_eje">
 			
 		</span>
+            </div>
 	</section>
 
 	<section id ="Registro_section" class="element_hidden">
@@ -210,7 +157,8 @@
 	<input name ="email" class="form_element" type="text"/>
 	<span id="email_vacio" class="element_hidden validation_error">Introduce un email</span>
 </br>
-<input type="submit" id="submit" value="Regístrate" name="signupSubmit" class="submit">
+<br/>
+<input type="submit" id="submit" value="Registrate" name="signupSubmit" class="submit">
 </form>
 <br/>
 <br/>
@@ -231,7 +179,7 @@
 	<input name ="password" class="form_element" type="password"/>
 	<span id="passw_vacio" class="element_hidden validation_error">Introduce una contraseña</span>
 </br>
-
+<br/>
 <input type="submit" value="Log In" id="submit" class="submit">
 </form>
 <br/>
@@ -245,7 +193,6 @@
 
 </main>
 <footer id=pie>
-	
 	<h5>Designed by Daniel Izaguirre & Marco Bernal </h5>
 </footer>
 
@@ -255,10 +202,6 @@
 <script type="text/javascript" src="js/script_JQ.js"></script> 
 <script type="text/javascript" src="js/script_A.js"></script>
 <script type="text/javascript" src="js/cartelera.js"></script>
+<script type="text/javascript" src="js/pedidos.js"></script>
 <script type="text/javascript" src="js/foro.js"></script>
 </html>
-
-
-
-
-

@@ -1,29 +1,22 @@
 <?php
 include("../dataAccess/dbConnect.php");
 include("../dataAccess/userDAO.php");
-include("../model/User.php");
 header('Accept: application/json');
     header('Content-type: application/json');
 
     $servername = "localhost";
     $username   = "root";
     $password   = "";
-    $dbname     = "practicaphp";
+    $dbname     = "final";
 
     $conn = new mysqli($servername, $username, $password, $dbname);
 /* Signup Form */
-    $tortilla = $_POST['tortilla'];
-    $ingrediente = $_POST['ingrediente'];
-    $opcionales = $_POST['opcionales'];
-    $salsa = $_POST['salsa'];
-     $nachos = $_POST['nachos'];
-    $calle = $_POST['calle'];
-    $cantidad = $_POST['cantidad'];
-    $username = $_POST['username'];
+    $paquetes = $_POST['paquetes'];
+    $dulces = $_POST['dulces'];
       
       $sql = "INSERT INTO pedidos 
-                    (tortilla, ingrediente, opcionales, salsa, nachos, cantidad, username)
-                    VALUES ('$tortilla', '$ingrediente', '$opcionales', '$salsa', '$nachos', '$cantidad', '$username')";
+                    (paquetes,dulces)
+                    VALUES ('$paquetes', '$dulces')";
 
             if (mysqli_query($conn, $sql)){
                 $response = array("status" => "success");

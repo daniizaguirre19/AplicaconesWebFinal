@@ -119,66 +119,31 @@ $.ajax({
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 $.ajax({
 	url: 'data/sr_burrito_ingredientes.json',
 	type: 'GET',
 	dataType: 'json',
 	success : function(data){
 		let new_html = '';
- 		var datos = data["menu"]["tipo_burrito"]
+ 		var datos = data["menu"]["paquetes"]
+ 		new_html+=`<select id="paquetes">
+					<option value="0" selected disabled hidden> Paquete a elegir... </option>`;
 		for (i in datos){
 			new_html+= `
-				<input type="radio" name="tortilla" id="${datos[i].value}"/> ${datos[i].type}
-				<br/>
-
-			`;
-		}
-		$('#radio_tortilla').append(new_html);
-	},
-	error: function(error_msg){
-	console.log(error_msg);
-}
-});
-
-$.ajax({
-	url: 'data/sr_burrito_ingredientes.json',
-	type: 'GET',
-	dataType: 'json',
-	success : function(data){
-		let new_html = '';
- 		var datos = data["menu"]["ingrediente"]
- 		new_html+=`<select id="carne">
-					<option value="0" selected disabled hidden> Ingrediente principal... </option>`;
-		for (i in datos){
-			new_html+= `
-			<option value="${i}" > ${datos[i].type} </option>
+			<option value="${datos[i].type}" > ${datos[i].type} </option>
 			<br/>
 
 			`;
 			
 		}
 		new_html+=`</select>`;
-		$('#select_carne').append(new_html);
+		$('#paquete').append(new_html);
 	},
 	error: function(error_msg){
 	console.log(error_msg);
 }
 });
+
 
 $.ajax({
 	url: 'data/sr_burrito_ingredientes.json',
@@ -186,38 +151,22 @@ $.ajax({
 	dataType: 'json',
 	success : function(data){
 		let new_html = '';
- 		var datos = data["menu"]["toppings"]
+ 		var datos = data["menu"]["dulces"]
+ 		new_html+=`<select id="dulces">
+					<option value="0" selected disabled hidden> Dulces a elegir... </option>`;
 		for (i in datos){
 			new_html+= `
-			<input type="checkbox" name="extra" id="${datos[i].value}" value="${datos[i].value} " /> ${datos[i].topping} 
-				<br/>
+			<option value="${datos[i].type}" > ${datos[i].type} </option>
+			<br/>
 
 			`;
+			
 		}
-		$('#check_secun').append(new_html);
+		new_html+=`</select>`;
+		$('#dulce').append(new_html);
 	},
 	error: function(error_msg){
 	console.log(error_msg);
 }
 });
 
-$.ajax({
-	url: 'data/sr_burrito_ingredientes.json',
-	type: 'GET',
-	dataType: 'json',
-	success : function(data){
-		let new_html = '';
- 		var datos = data["menu"]["salsas"]
-		for (i in datos){
-			new_html+= `
-				<input type="radio" name="salsa" id="${datos[i].value}"/> ${datos[i].salsa}
-				<br/>
-
-			`;
-		}
-		$('#radio_salsa').append(new_html);
-	},
-	error: function(error_msg){
-	console.log(error_msg);
-}
-});

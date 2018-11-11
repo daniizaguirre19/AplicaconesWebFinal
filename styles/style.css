@@ -1,37 +1,27 @@
 
-body {
-  font-family: Verdana, sans-serif;
-  font-size: 13px;
-  margin: 0px;
-  padding: 10px;
-  color: #E51A2E;
-    background-color: #03BC9E;
+.body {
+  font-family:verdana, sans-serif;
+    font-size: 18px;
+    background-color: aliceblue;
+    margin: 0px;
 }
 
-h1 {
-  margin: 0px;
-  padding: 20px;
-  background-color: #FCC000;
+
+#top {
   color: white;
-  background-image: url('../img/senor_burrito.jpg');
-   background-repeat: no-repeat;
-  border: 1px solid #FCC000;
-  background-size: 100px 100px;
-  margin: 10px 0px;
-  display: block;
-  background-position: 13px 18px;
-  background-position: right;
+    text-align: center;
+    padding: 5px;
+    background-color: darkblue;
 }
 
 h3{
-  text-align: center;
   color:#E51A2E;
 }
 h4{
   color:#E51A2E;
 }
 h5{
-  color: white;
+  color: darkblue;
   text-align: center;
 }
 h6{
@@ -50,23 +40,26 @@ h7{
 
 
 #menu {
+  text-align: center;
+    margin: 0px;
+    padding-left: 400px;
   list-style: none;                          
-  margin: 0;
-  padding: 0;
-  background-color: #E51A2E;
+  background-color:darkslategrey;
   overflow: hidden;
-  color: #03BC9E;
+  color: white;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 #menu > li {
-  float: left;
+  float:left;
   padding: 20px;
 }
 
 #menu > li:hover {
   color: #FFFFFF;
   cursor: pointer;
-  background-color: #FCC000;
+  background-color: cadetblue;
+    font-weight: bold;
 }
 
 #submenu {
@@ -76,6 +69,7 @@ h7{
   background-color: blue;
   overflow: hidden;
   color: white;
+
 }
 
 #submenu > li {
@@ -87,25 +81,78 @@ h7{
   color: #FFFFFF;
   cursor: pointer;
   background-color: green;
+   font-weight: bold;
 }
 main {
-  border: 1px dashed #CCCCCC;
-  margin: 20px;
+
   padding: 20px;
-  background-color: white;
-  color: #03BC9E;
+    margin-top: 20px;
+	margin-left: 150px;
+	margin-right: 150px;
 }
 
+#img{
+    float: left;
+    padding-right: 20px;
+}
+.cart{
+    display: inline-block;
+    background-color:midnightblue;
+    padding: 20px
+}
+
+.description{
+    color: azure;
+}
+
+.info{
+    background-color: honeydew;
+    padding: 10px;
+    border-radius: 12px;
+}
+#separacion{
+    background-color: royalblue;
+    padding: 50;
+    color: royalblue;
+}
 #pie{
   text-align: center;
   color: white;
 }
 
 .submit{
-  background-color: #56C56F
+  color: white;
+    border: none;
+    background-color: blue;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 12px;
+    font-size: 16px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.submit:hover {
+    background-color: white;
+    color: blue;
+    cursor:pointer;
+    font-weight: bold;
 }
 .cancel{
-  background-color: #D9534F
+  color: #FCC000;
+    border: none;
+    background-color: #E51A2E;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 12px;
+    font-size: 16px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.cancel:hover {
+    background-color: white;
+    color: red;
+    cursor:pointer;
+    font-weight: bold;
 }
 .imagen{
   align-content: center;
@@ -166,3 +213,15 @@ textarea {
       
       background-color: #E51A2E;
   }
+#comments{
+    background-color: midnightblue;
+    padding: 50px;
+    padding-top: 10px;
+    color:white;
+}
+.comment{
+  color:white;
+}
+#com{
+  color:white;
+}

@@ -1,5 +1,4 @@
 <?php
-
 class User {
       /* Member variables */
       var $username; 
@@ -28,7 +27,7 @@ class User {
       } 
         
       function getMail(){ 
-         return $this->mail; 
+         return $this->email; 
       } 
       
       function setPassword($password){ 
@@ -39,4 +38,4 @@ class User {
          return $this->password; 
       } 
    } 
- 
+ ?>
