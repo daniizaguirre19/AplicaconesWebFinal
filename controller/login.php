@@ -14,7 +14,7 @@ $db = getDB();
 $userDAO = new userDAO($db);
 $user = $userDAO->getUser($username, $password);
 if ($user) {
-      $_SESSION['user']=$user;
+      $_SESSION['user']=$username;
       $url = BASE_URL . 'index.html';
       
       header("Location: $url"); // Page redirecting to home.php 

@@ -120,7 +120,7 @@ $.ajax({
 
 
 $.ajax({
-	url: 'data/sr_burrito_ingredientes.json',
+	url: 'data/snacks.json',
 	type: 'GET',
 	dataType: 'json',
 	success : function(data){
@@ -146,7 +146,7 @@ $.ajax({
 
 
 $.ajax({
-	url: 'data/sr_burrito_ingredientes.json',
+	url: 'data/snacks.json',
 	type: 'GET',
 	dataType: 'json',
 	success : function(data){

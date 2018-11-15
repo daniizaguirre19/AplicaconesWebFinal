@@ -12,6 +12,9 @@ $('#button_submit').click(function(){
 				dataType	: "json",
 				success		: function(data){
                     console.log("hola");
+                    
+                    alert('Pedido registrado!\n Has ordenado: \n -'+ $('#paquetes').val() + '\n -' + $('#dulces').val());
+                    $("#form1").trigger("reset");
 
 				},
 				error		: function(error){

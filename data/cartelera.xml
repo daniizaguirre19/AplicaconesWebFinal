@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<netflix-series>
+  <series>
+    <name>Bohemian Rhapsody</name>
+    <ranking>1</ranking>
+    <sala>Sala 1</sala>
+    <horario>13:00 16:00 19:00 </horario>
+    <imdb>8.5/10</imdb>
+    <description>Biopic centrado en la figura del malogrado cantante Freddie Mercury que situará su acción entre principios de los año 70, cuando se creó Queen, y mediados de los 80, cuando la formación toco en 1985 en Wembley con motivo del Live Aid. La banda estuvo en los escenarios durante casi dos décadas, hasta la trágica muerte de Mercury en 1991. </description>
+    <img>img/img1.jpg</img>
+  </series>
+  <series>
+    <name>La noche de Halloween</name>
+    <ranking>2</ranking>
+    <sala>Sala 2</sala>
+    <horario>13:00 16:00 19:00</horario>
+    <imdb>8.9/10</imdb>
+    <description>Jamie Lee Curtis vuelve a su emblemático papel como Laurie Strode en 'La noche de Halloween', dónde tendrá que volver a enfrentarse a Michael Myers, un asesino enmascarado que la atormenta desde aquella matanza de la noche de Halloween hace cuatro décadas, de la que apenas escapó con vida. Un equipo británico que realiza documentales viaja a los Estados Unidos para visitar a Michael Myers en prisión para tratar de entrevistarle para un programa que están rodando a modo de retrospectiva sobre los macabros crímenes que cometió en Haddonfield. Entonces Myers se escapará e irá de nuevo en busca de Laurie Strode para acabar de una vez por todas lo que comenzó cuatro décadas atrás. Sin embargo, Laurie se ha armado y se ha preparado para el día en que Michael Myers regresase y hará lo posible por salvar su vida, la de su hija Karen y la de su nieta Allyson.</description>
+    <img>img/img2.jpg</img>
+  </series>
+  <series>
+    <name>Infiltrado en el KKKlan</name>
+    <ranking>3</ranking>
+    <sala>Sala 3</sala>
+    <horario>13:00 16:00 19:00</horario>
+    <imdb>8.2/10</imdb>
+    <description>A principios de los años setenta, una época de gran agitación social con la encarnizada lucha por los derechos civiles como telón de fondo, Ron Stallworth (JOHN DAVID WASHINGTON) se convierte en el primer detective afroamericano del departamento de policía de Colorado Springs, pero es recibido con escepticismo y hostilidad por los mandos y los agentes. Sin amedrentarse, decide seguir adelante y hacer algo por su comunidad llevando a cabo una misión muy peligrosa: infiltrarse en el Ku Klux Klan y exponerlo ante la ciudad.</description>
+    <img>img/img3.jpg</img>
+  </series>
+  <series>
+    <name>El cascanueces y los cuatro reinos</name>
+    <ranking>4</ranking>
+    <sala>Sala 4</sala>
+    <horario>13:00 16:00 19:00</horario>
+    <imdb>8.2/10</imdb>
+    <description>Todo lo que quiere Clara (Mackenzie Foy) es una llave única que abre una caja que contiene un regalo de valor incalculable que perteneció a su difunta madre. Un hilo dorado, que le ofrecen en la fiesta anual del padrino Drosselmeyer (Morgan Freeman), le conduce a la codiciada llave y no tarda en desaparecer en un extraño y misterioso mundo paralelo.</description>
+    <img>img/img4.jpg</img>
+  </series>
+  <series>
+    <name>Pesadillas 2: Noche de Halloween</name>
+    <ranking>5</ranking>
+    <sala>Sala 5</sala>
+    <horario>13:00 16:00 19:00</horario>
+    <imdb>8.6/10</imdb>
+    <description>La familia Quinn, compuesta por Sarah, su hermano pequeño Sonny y su madre Kathy y el mejor amigo de Sonny se dedican a coleccionar objetos que la gente no quiere, razón por la cual acaban cruzándose en el camino de Slappy, una traviesa marioneta de un libro sin publicar de 'Pesadillas'.</description>
+    <img>img/img5.jpg</img>
+  </series>
+
+ 
+ 
+</netflix-series>
+<!-- https://uproxx.com/tv/best-netflix-original-series-to-watch-right-now-ranked/3/ -->

@@ -42,10 +42,6 @@ function valida_email(email){
 $("#button_cancel").on('click', function(event){
 
   $formu.trigger("reset");
-  $tortilla_err.addClass("element_hidden");
-  $carne_err.addClass("element_hidden");
-  $nachos_err.addClass("element_hidden");
-  numero_err.addClass("element_hidden");
   });
 
 //definiciones 

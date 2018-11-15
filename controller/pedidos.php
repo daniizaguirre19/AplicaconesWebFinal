@@ -3,7 +3,7 @@ include("../dataAccess/dbConnect.php");
 include("../dataAccess/userDAO.php");
 header('Accept: application/json');
     header('Content-type: application/json');
-
+    session_start();
     $servername = "localhost";
     $username   = "root";
     $password   = "";
@@ -13,10 +13,15 @@ header('Accept: application/json');
 /* Signup Form */
     $paquetes = $_POST['paquetes'];
     $dulces = $_POST['dulces'];
+    if(isset($_SESSION['user'])) {
+       $user = $_SESSION['user'];
+    }else{
+        $user = "invitado";
+    }
       
       $sql = "INSERT INTO pedidos 
-                    (paquetes,dulces)
-                    VALUES ('$paquetes', '$dulces')";
+                    (paquetes,dulces,user)
+                    VALUES ('$paquetes', '$dulces', '$user')";
 
             if (mysqli_query($conn, $sql)){
                 $response = array("status" => "success");
